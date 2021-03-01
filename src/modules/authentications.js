@@ -1,5 +1,5 @@
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:3000'
+axios.defaults.baseURL = 'https://defi-unchained.herokuapp.com'
 
 const registration = async (credentials) => {
   let response = await axios.post('/api/auth', credentials)
